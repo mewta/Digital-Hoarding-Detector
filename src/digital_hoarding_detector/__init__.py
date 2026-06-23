@@ -8,6 +8,7 @@ from .duplicate import (
     find_duplicate_groups,
     hamming_distance,
 )
+from .gallery import GalleryImage, GalleryReport, analyze_gallery, format_storage_size
 from .screenshot import (
     ScreenshotAnalysis,
     analyze_screenshot,
@@ -28,11 +29,14 @@ __all__ = [
     "DuplicateAnalysis",
     "DuplicateGroup",
     "FaceBox",
+    "GalleryImage",
+    "GalleryReport",
     "ScreenshotAnalysis",
     "SelfieAnalysis",
     "SelfieGroup",
     "analyze_blur",
     "analyze_blur_batch",
+    "analyze_gallery",
     "analyze_screenshot",
     "analyze_screenshot_batch",
     "difference_hash",
@@ -41,5 +45,6 @@ __all__ = [
     "face_similarity",
     "find_duplicate_groups",
     "find_similar_selfies",
+    "format_storage_size",
     "hamming_distance",
 ]
